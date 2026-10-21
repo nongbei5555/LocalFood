@@ -57,3 +57,11 @@ h2{font-size:clamp(21px,2.4vw,28px)}.banner{height:clamp(150px,19vw,224px)}.bt .
 .stp{display:flex;gap:12px;align-items:center;padding:8px 0;opacity:.5}.stp.d{opacity:1}.stp>span{width:34px;height:34px;border-radius:50%;background:var(--side);display:grid;place-items:center;flex:none}.stp.d>span{background:#ff7a1222}.stp.c>span{background:var(--o);animation:pl 1.2s infinite}.stp b{display:block}.stp small{color:var(--mu)}@keyframes pl{50%{transform:scale(1.12)}}
 .rider{background:var(--side);border-radius:10px;padding:10px 14px;margin-top:8px;font-size:15px}
 @media(max-width:520px){#auth{gap:10px}.acc{font-size:14px;gap:6px}.acc .av{width:30px;height:30px}.hb{font-size:20px}}
+
+/* แบนเนอร์: ย่อขนาด จัดข้อความเรียงในแนวตั้งไม่ให้ทับกัน */
+.banner{height:auto;min-height:clamp(125px,12.5vw,160px);padding:14px 28px;display:flex;flex-direction:column;justify-content:center;gap:2px}
+.bt{position:static}.bt .s,.bt .b,.bt p{transform-origin:left bottom;transform:rotate(-3deg)}
+.bt .s{font-size:clamp(15px,2vw,26px);margin-bottom:2px}.bt .b{font-size:clamp(26px,3.6vw,48px);margin-top:0}.bt p{font-size:clamp(11px,1.3vw,16px);margin:6px 0 0}
+.chips{position:static;margin-top:8px;gap:8px 20px;flex-wrap:wrap;font-size:clamp(11px,1.15vw,14px)}
+.tag{font-size:clamp(16px,1.9vw,22px);top:50%;margin-top:-26px}
+@media(max-width:900px){.banner{padding:12px 18px;min-height:110px}.bt p{display:block;font-size:clamp(11px,2.8vw,13px)}}
